@@ -41,7 +41,7 @@ const useWeather = (lat, lon, unit = "metric") => {
           const min = Math.min(...temps.map((t) => t.temp_min));
           const max = Math.max(...temps.map((t) => t.temp_max));
           const preferred =
-            items.find((i) => i.dt_txt.includes("13:00:00")) || items[0];
+            items.find((i) => i.dt_txt.includes("12:00:00")) || items[0];
           return {
             date,
             temp_min: min,
